@@ -5,15 +5,15 @@ const CommentList = ({ comments }) => {
   return (
     <ul>
       {comments.map(comment => (
-        <li key={comment.id} className={styles.list}>
+        <li key={comment._id} className={styles.list}>
           <div className={styles.userNameConteiner}>
-            <h2 className={styles.userName}>{comment.userName}</h2>
+            <h2 className={styles.userName}>{comment.username}</h2>
             <p className={styles.email}>{comment.email}</p>
           </div>
           {comment.homePage && (
             <div>
               Home page:
-              <a className={styles.homePage} href={comment.homePage}>
+              <a className={styles.homePage} href={comment.homepage}>
                 {comment.homePage}
               </a>
             </div>
