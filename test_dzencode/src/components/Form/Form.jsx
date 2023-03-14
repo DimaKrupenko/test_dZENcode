@@ -12,10 +12,8 @@ const Form = ({ onSubmit }) => {
     const [homePage, setHomePage] = useState('')
     const [text, setText] = useState('')
 
-    const userNameId = nanoid();
-    const emailId = nanoid();
-    const homePageId = nanoid()
-    const textId = nanoid()
+    const { userNameId, emailId, homePageId, textId } = nanoid();
+
 
     const data = { comment, userName, email, homePage, text };
 

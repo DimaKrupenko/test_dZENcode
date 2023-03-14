@@ -16,11 +16,7 @@ const App = () => {
       text: comment.text
     }
     setComments(prevState =>
-      // const { name, number, id } = prevState;
-
       [...prevState, comment])
-
-
   }
   return (
     <div>

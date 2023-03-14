@@ -10,9 +10,14 @@ const CommentList = ({ comments }) => {
             <h2 className={styles.userName}>{comment.userName}</h2>
             <p className={styles.email}>{comment.email}</p>
           </div>
-          <a className={styles.homePage} href={comment.homePage}>
-            {comment.homePage}
-          </a>
+          {comment.homePage && (
+            <div>
+              Home page:
+              <a className={styles.homePage} href={comment.homePage}>
+                {comment.homePage}
+              </a>
+            </div>
+          )}
           <p>{comment.text}</p>
         </li>
       ))}
