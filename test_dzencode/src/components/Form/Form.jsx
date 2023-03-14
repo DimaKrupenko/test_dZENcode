@@ -4,7 +4,6 @@ import styles from './Form.module.css'
 import { nanoid } from 'nanoid';
 
 
-
 const Form = ({ onSubmit }) => {
     const [comment] = useState('')
     const [userName, setUserName] = useState('');
